@@ -20,7 +20,7 @@ ex. `vagrant up molecule`
 
 env ANSIBLE_VERSION=_**VersionNumber**_ vagrant up server
 
-`env ANSIBLE_VERSION=2.10.10 vagrant up server`
+`env ANSIBLE_VERSION=2.10.10 vagrant up molecule`
 
 
 ## How to use
