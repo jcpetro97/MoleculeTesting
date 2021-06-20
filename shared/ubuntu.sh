@@ -37,7 +37,11 @@ fi
 
 /bin/echo "------> installing yamllint <------"
 /usr/bin/python3 -m pip install yamllint
+
 /bin/echo "------> installing molecule and the docker plugin <------"
 /usr/bin/python3 -m pip install molecule
 /usr/bin/python3 -m pip install molecule[docker]
 /usr/bin/python3 -m pip install docker
+
+/bin/echo "------> applying latest updates <------"
+apt upgrade -y
