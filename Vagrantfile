@@ -7,7 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :molecule do |x|
     x.vm.box = "jcpetro97/ubuntu2004"
     x.vm.synced_folder '.', '/vagrant', disabled: false
-    x.vm.hostname = "ansibledev"
+    x.vm.hostname = "molecule"
 #    x.vm.network "private_network", ip: "192.168.70.2"
     x.vm.provider "virtualbox" do |vb|
       vb.memory = 2048
