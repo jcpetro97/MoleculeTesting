@@ -15,9 +15,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       vb.gui = false
       vb.name = "ubuntu2004-Molecule"
     end
-#    x.vm.provision "shell" do |s|
-#      s.path = "./shared/ubuntu.sh"
-#      s.env   = {ANSIBLE_VERSION:ENV['ANSIBLE_VERSION']}
-#    end
+    x.vm.provision "shell" do |s|
+      s.path = "./shared/ubuntu.sh"
+      s.env   = {ANSIBLE_VERSION:ENV['ANSIBLE_VERSION']}
+    end
   end
 end
