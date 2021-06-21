@@ -1,1 +1,5 @@
 .vagrant/
+roles/*
+!roles/requirements.yml
+collections/*
+!collections/requirements.yml
